@@ -1,0 +1,8 @@
+node_modules
+.pnpm-store
+dist
+coverage
+.tracevault
+*.log
+apps/web/dist
+apps/lite/dist

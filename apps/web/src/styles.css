@@ -1,0 +1,139 @@
+:root {
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  color: #10212b;
+  background: radial-gradient(circle at top left, #d9ecf9, #f5f1e7 45%, #f8fbfd 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.topbar {
+  display: grid;
+  grid-template-columns: 160px 1fr 280px;
+  gap: 16px;
+  align-items: center;
+  padding: 12px 18px;
+  border-bottom: 1px solid #c9d6de;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(4px);
+}
+
+.topbar .brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.topbar nav {
+  display: flex;
+  gap: 14px;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: #0b4f6c;
+  font-weight: 600;
+}
+
+.topbar input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #b8c6cf;
+}
+
+main {
+  padding: 18px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid #cfdae1;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.explorer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 12px;
+}
+
+.viewer {
+  max-height: calc(100vh - 160px);
+  overflow: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+button {
+  border: 1px solid #94a7b3;
+  border-radius: 8px;
+  background: #f4fafc;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+button.active {
+  background: #0b4f6c;
+  color: #fff;
+  border-color: #0b4f6c;
+}
+
+.turn {
+  border-top: 1px dashed #bed0dc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.search-row input {
+  flex: 1;
+  padding: 8px;
+}
+
+.error {
+  color: #9f1c1c;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (max-width: 980px) {
+  .topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-two,
+  .explorer-grid {
+    grid-template-columns: 1fr;
+  }
+}

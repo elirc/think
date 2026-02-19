@@ -1,0 +1,21 @@
+{
+  "name": "@tracevault/indexer",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/lib.js",
+  "types": "dist/lib.d.ts",
+  "bin": {
+    "tracevault-indexer": "bin/tracevault-indexer.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@tracevault/core": "workspace:*",
+    "commander": "^13.1.0"
+  },
+  "optionalDependencies": {
+    "duckdb": "^1.2.1"
+  }
+}

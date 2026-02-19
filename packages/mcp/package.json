@@ -1,0 +1,16 @@
+{
+  "name": "@tracevault/mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@tracevault/core": "workspace:*",
+    "@tracevault/indexer": "workspace:*",
+    "fastify": "^5.2.2"
+  }
+}

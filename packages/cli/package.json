@@ -1,0 +1,27 @@
+{
+  "name": "@tracevault/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "tracevault": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@tracevault/core": "workspace:*",
+    "@tracevault/indexer": "workspace:*",
+    "@tracevault/mcp": "workspace:*",
+    "@tracevault/server": "workspace:*",
+    "blessed": "^0.1.81",
+    "commander": "^13.1.0",
+    "enquirer": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/blessed": "^0.1.25"
+  }
+}
